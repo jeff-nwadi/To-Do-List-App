@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #345392, #750a90);
+    padding: 10px;
+
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+}
+
+.todo-app h2{
+    color: #08275a;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+
+
+.todo-app h2 i{
+    width: 30px;
+    margin-left: 10px;
+    color: #ff5945;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background: #edeef0;
+}
+
+input{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+}
+
+button{
+    outline: none;
+    padding: 16px 50px;
+    border: none;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
+
+
+@media (max-width: 480px){ 
+    /* body { 
+        background-color: red;
+    } */
+    button{
+        padding: 14px 25px;
+    }
+
+    .todo-app{
+        padding: 30px 10px 40px;
+    
+    }
+
+    .todo-app h2{
+        font-size: 16px;
+    
+    }
+
+    input{
+        padding: 10px;
+    }
+
+}
+
+/* Media Query for low resolution Tablets, Ipads */ 
+ @media (min-width: 481px) and (max-width: 767px) { 
+     /* body { 
+        background-color: yellow; 
+    } */
+  
+} 
+
+
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 768px) and (max-width: 1024px){ 
+    /* body { 
+        background-color: blue; 
+    } */
+
+} 
+
+/* Media Query for Laptops and Desktops */ 
+ @media (min-width: 1025px) and (max-width: 1280px){ 
+    /* body { 
+        background-color: green; 
+    } */
+
+}
+
+/* Media Query for Large screens */ 
+@media (min-width: 1281px) { 
+   
+} 
+            
+
+
+
